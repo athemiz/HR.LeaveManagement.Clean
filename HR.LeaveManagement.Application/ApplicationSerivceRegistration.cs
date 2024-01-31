@@ -11,7 +11,7 @@ namespace HR.LeaveManagement.Application;
 
 public static class ApplicationSerivceRegistration
 {
-    public static IServiceCollection AddApplicatioNServices(this IServiceCollection services)
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
